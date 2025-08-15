@@ -1,6 +1,0 @@
-import tkinter as tk
-
-fenetre = tk.Tk()
-fenetre.title("Bienvenue dans mon monde")
-fenetre.geometry("600x400")
-fenetre.mainloop()
