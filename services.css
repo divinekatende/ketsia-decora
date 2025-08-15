@@ -1,0 +1,85 @@
+/* Style général du body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* blanc */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.top-banner {
+  background-color : #a4c8f0; 
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+
+/* Menu de navigation */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+  background-color: #003366; /* bleu foncé */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #66ccff; /* bleu clair */
+}
+
+/* Section services */
+section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #cceeff; /* bleu ciel */
+}
+
+.service {
+  background-color: #ffffff;
+  border-left: 5px solid #3399cc; /* bleu moyen */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  color: #003366;
+  margin-top: 0;
+}
+
+.service p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}

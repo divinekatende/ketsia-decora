@@ -1,0 +1,126 @@
+/* ======================= */
+/* Style général du corps  */
+/* ======================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* fond clair */
+    color: #333; /* texte gris foncé */
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================= */
+/* Container central       */
+/* ======================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* ======================= */
+/* Titres et sous-titres   */
+/* ======================= */
+h1 {
+    color: #0a3d62; /* bleu foncé */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #0a3d62;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #0a3d62; /* petit trait décoratif */
+    padding-bottom: 5px;
+}
+
+/* ======================= */
+/* Galerie                */
+/* ======================= */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* espace entre les images */
+}
+
+/* Chaque image et son texte */
+.gallery-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* garde la proportion de l'image */
+    display: block;
+}
+
+/* Texte sous l'image */
+.gallery-item p {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Effet au survol */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* ======================= */
+/* Header simple           */
+/* ======================= */
+.header {
+    background-color: #0a3d62; /* bleu foncé */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header .brand__logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header .brand__name {
+    font-size: 18px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav a.active {
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    color: #f9a825; /* accent doré au survol */
+}
+
+/* ======================= */
+/* Responsive pour mobiles  */
+/* ======================= */
+@media (max-width: 768px) {
+    h1 { font-size: 26px; }
+    h2 { font-size: 20px; }
+    .gallery-item img { height: 180px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    .gallery-item img { height: 150px; }
+}

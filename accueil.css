@@ -1,10 +1,10 @@
-/* Palette romantique */
+/* Palette bleu-blanc */
 :root {
-  --blanc: #fffafa;
-  --rose-clair: #ffe4e9;
-  --rose: #f8a8b8;
-  --rouge-doux: #d94c63;
-  --gris-fonce: #444;
+  --blanc: #ffffff;
+  --bleu-clair: #e6f0ff;
+  --bleu: #a4c8f0;
+  --bleu-ciel: #7abaff;
+  --bleu-fonce: #0a3d62;
   --font-titre: 'Dancing Script', cursive;
   --font-texte: 'Georgia', serif;
 }
@@ -15,12 +15,12 @@ body {
   padding: 0;
   font-family: var(--font-texte);
   background-color: var(--blanc);
-  color: var(--gris-fonce);
+  color: var(--bleu-fonce);
 }
 
 /* Bannière supérieure */
 .top-banner {
-  background-color: var(--rose);
+  background-color: var(--bleu);
   color: var(--blanc);
   padding: 10px;
   text-align: center;
@@ -32,7 +32,7 @@ body {
 .main-header {
   background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
   padding: 60px 30px;
-  box-shadow: inset 0 0 0 1000px rgba(255, 228, 233, 0.6);
+  box-shadow: inset 0 0 0 1000px rgba(230, 240, 255, 0.6);
   border-radius: 0 0 40px 40px;
 }
 
@@ -47,8 +47,8 @@ body {
 .logo {
   font-size: 32px;
   font-family: var(--font-titre);
-  color: var(--rouge-doux);
-  text-shadow: 1px 1px 5px rgba(217, 76, 99, 0.3);
+  color: var(--bleu-ciel);
+  text-shadow: 1px 1px 5px rgba(122, 186, 255, 0.3);
 }
 
 .nav-links {
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--gris-fonce);
+  color: var(--bleu-fonce);
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px;
@@ -67,26 +67,26 @@ body {
 }
 
 .nav-links a:hover {
-  background-color: var(--rose-clair);
-  color: var(--rouge-doux);
+  background-color: var(--bleu-clair);
+  color: var(--bleu-ciel);
 }
 
 /* Hero Section */
 .hero-section {
-  background-color: rgba(255, 250, 250, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   margin: 0 auto;
   padding: 40px 30px;
   border-radius: 30px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(248, 168, 184, 0.5);
+  box-shadow: 0 8px 20px rgba(164, 200, 240, 0.5);
 }
 
 .hero-section h1 {
   font-family: var(--font-titre);
   font-size: 48px;
   margin-bottom: 20px;
-  color: var(--rose);
+  color: var(--bleu);
 }
 
 .hero-section p {
@@ -96,7 +96,7 @@ body {
 
 /* Bouton */
 .btn {
-  background-color: var(--rouge-doux);
+  background-color: var(--bleu-ciel);
   color: var(--blanc);
   padding: 15px 30px;
   border: none;
@@ -108,13 +108,13 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--rose);
-  color: var(--gris-fonce);
+  background-color: var(--bleu);
+  color: var(--bleu-fonce);
 }
 
 /* Section À propos */
 .about {
-  background-color: var(--rose-clair);
+  background-color: var(--bleu-clair);
   padding: 50px 20px;
   text-align: center;
   border-radius: 40px;
@@ -124,7 +124,7 @@ body {
 .about h2 {
   font-family: var(--font-titre);
   font-size: 36px;
-  color: var(--rouge-doux);
+  color: var(--bleu-ciel);
   margin-bottom: 20px;
 }
 
@@ -133,5 +133,5 @@ body {
   max-width: 700px;
   margin: auto;
   line-height: 1.6;
-  color: var(--gris-fonce);
+  color: var(--bleu-fonce);
 }
