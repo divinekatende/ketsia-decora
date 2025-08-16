@@ -1,60 +1,79 @@
-/* Palette bleu-blanc */
+/* 🎨 Palette bleu-blanc chic */
 :root {
   --blanc: #ffffff;
-  --bleu-clair: #e6f0ff;
-  --bleu: #a4c8f0;
-  --bleu-ciel: #7abaff;
+  --blanc-casse: #f9f9fb;
+  --bleu-clair: #eaf3ff;
+  --bleu: #a8c8f0;
+  --bleu-ciel: #6faee8;
   --bleu-fonce: #0a3d62;
+  --accent: #4a90e2;
   --font-titre: 'Dancing Script', cursive;
   --font-texte: 'Georgia', serif;
 }
 
-/* Général */
+/* 🌐 Général */
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font-texte);
-  background-color: var(--blanc);
+  background-color: var(--blanc-casse);
   color: var(--bleu-fonce);
+  line-height: 1.6;
 }
 
-/* Bannière supérieure */
+/* 🔝 Bannière */
 .top-banner {
-  background-color: var(--bleu);
+  background-color: var(--bleu-ciel);
   color: var(--blanc);
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  font-size: 14px;
 }
 
-/* En-tête */
+/* 🏷️ En-tête */
 .main-header {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-  padding: 60px 30px;
-  box-shadow: inset 0 0 0 1000px rgba(230, 240, 255, 0.6);
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') 
+              no-repeat center center/cover;
+  padding: 80px 30px;
+  box-shadow: inset 0 0 0 1000px rgba(234, 243, 255, 0.65);
   border-radius: 0 0 40px 40px;
+  text-align: center;
 }
 
-/* Barre de navigation */
+.main-header h1 {
+  font-family: var(--font-titre);
+  font-size: 52px;
+  color: var(--bleu-fonce);
+  margin-bottom: 15px;
+}
+
+.main-header p {
+  font-size: 20px;
+  color: var(--bleu-fonce);
+  opacity: 0.85;
+}
+
+/* 🔗 Navigation */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 30px auto;
+  max-width: 1000px;
 }
 
 .logo {
-  font-size: 32px;
+  font-size: 30px;
   font-family: var(--font-titre);
-  color: var(--bleu-ciel);
-  text-shadow: 1px 1px 5px rgba(122, 186, 255, 0.3);
+  color: var(--accent);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -62,76 +81,78 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding: 10px 15px;
-  border-radius: 30px;
+  border-radius: 25px;
   transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
   background-color: var(--bleu-clair);
-  color: var(--bleu-ciel);
+  color: var(--accent);
 }
 
-/* Hero Section */
+/* ⭐ Hero Section */
 .hero-section {
-  background-color: rgba(255, 255, 255, 0.9);
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 30px;
-  border-radius: 30px;
+  background-color: var(--blanc);
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 50px 40px;
+  border-radius: 25px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(164, 200, 240, 0.5);
+  box-shadow: 0 8px 20px rgba(164, 200, 240, 0.4);
 }
 
-.hero-section h1 {
+.hero-section h2 {
   font-family: var(--font-titre);
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 20px;
-  color: var(--bleu);
+  color: var(--accent);
 }
 
 .hero-section p {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 30px;
+  color: var(--bleu-fonce);
 }
 
-/* Bouton */
+/* 🎀 Bouton */
 .btn {
-  background-color: var(--bleu-ciel);
+  background-color: var(--accent);
   color: var(--blanc);
-  padding: 15px 30px;
+  padding: 14px 28px;
   border: none;
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .btn:hover {
   background-color: var(--bleu);
-  color: var(--bleu-fonce);
+  transform: translateY(-2px);
 }
 
-/* Section À propos */
+/* ℹ️ Section À propos */
 .about {
   background-color: var(--bleu-clair);
-  padding: 50px 20px;
+  padding: 60px 30px;
   text-align: center;
-  border-radius: 40px;
-  margin-top: 50px;
+  border-radius: 30px;
+  margin: 60px auto;
+  max-width: 900px;
 }
 
 .about h2 {
   font-family: var(--font-titre);
   font-size: 36px;
-  color: var(--bleu-ciel);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 17px;
   max-width: 700px;
   margin: auto;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--bleu-fonce);
 }
